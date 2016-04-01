@@ -7,7 +7,7 @@
  1. Install
  
  ```
- omposer require whisperbuddy/whisperbuddy-php
+ composer require whisperbuddy/whisperbuddy-php
  ```
  
  2. Example Usage
