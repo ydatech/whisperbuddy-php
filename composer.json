@@ -1,6 +1,7 @@
 {
     "name": "whisperbuddy/whisperbuddy-php",
     "description": "PHP library for whisperbuddy.com's Lead and Listener",
+	"keywords": ["whisperbuddy","viral"],
 	"version": "1.0.0",
     "authors": [
         {
@@ -16,6 +17,6 @@
 	"autoload": {
         "psr-4": {
             "whisperbuddy\\": "src/"
-        }
-    }
+		}
+	}
 }
