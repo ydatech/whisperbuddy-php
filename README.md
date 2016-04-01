@@ -5,9 +5,11 @@
 
 
  1. Install
- ```php
+ 
+ ```
  omposer require whisperbuddy/whisperbuddy-php
  ```
+ 
  2. Example Usage
  
 
