@@ -3,6 +3,8 @@
     "description": "PHP library for whisperbuddy.com's Lead and Listener",
 	"keywords": ["whisperbuddy","viral"],
 	"version": "1.0.0",
+	"homepage" : "https://github.com/ydatech/whisperbuddy-php/",
+	"license": "MIT",
     "authors": [
         {
             "name": "Yuda Sukmana",
