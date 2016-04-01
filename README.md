@@ -5,6 +5,8 @@
 
 
  1. Install
- 
 
-    composer require whisperbuddy/whisperbuddy-php
+      composer require whisperbuddy/whisperbuddy-php
+
+ 2. Basic Usage
+ 
