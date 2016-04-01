@@ -8,15 +8,27 @@
 	
 	
 	
-	$key = "NC8XanSyKcyU8PtUOnl-MwK2hYZ1kd8F";
-	$secret = "mE7sGcH-zQc_-KF6yLDLnCVBByRge2bZ";
+	$key = "NC8XanSyKcyU8PtUOnl-xxxxxxxxxx";
+	$secret = "mE7sGcH-zQc_-KF6xxxxxxxxxxxxxx";
 	
 	
 	$whisperbuddy = new WhisperBuddy($key,$secret);
 	
-	$data = [ 'name'=> 'Asep Koswara' , 'email'=>'asep.koswara@gmail.com'];
+	// Create new Lead
+	
+	$data = [ 'name'=> 'John Smith' , 'email'=>'johnsmith@gmail.com'];
 	
 	$response = $whisperbuddy->createLead($data);
 	
 	
 	var_dump($response);
+	
+	
+	// Create Listener
+	
+	
+	$listener = $whisperbuddy->listen();
+	
+	var_dump($listener);
+	
+	

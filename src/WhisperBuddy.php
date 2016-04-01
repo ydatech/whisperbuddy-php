@@ -105,7 +105,7 @@
 		 *
 		 */
 		
-		public function actionListen(){
+		public function listen(){
 			
 			if(isset($_POST['token'])){
 				$secretkey = base64_encode($this->secret);
