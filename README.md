@@ -2,7 +2,7 @@
 
 
 ----------
-
+[![Build Status](https://travis-ci.org/ydatech/whisperbuddy-php.svg?branch=master)](https://travis-ci.org/ydatech/whisperbuddy-php)
 
  1. Install
  
