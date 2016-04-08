@@ -6,6 +6,8 @@
 
  1. Install
  
+ You need php 5.4 or later
+ 
  ```
  composer require whisperbuddy/whisperbuddy-php
  ```
