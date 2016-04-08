@@ -2,7 +2,7 @@
     "name": "whisperbuddy/whisperbuddy-php",
     "description": "PHP library for whisperbuddy.com's Lead and Listener",
 	"keywords": ["whisperbuddy","viral"],
-	"version": "1.0.1",
+	"version": "1.0.5",
 	"homepage" : "https://github.com/ydatech/whisperbuddy-php/",
 	"license": "MIT",
     "authors": [
