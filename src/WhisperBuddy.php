@@ -59,7 +59,7 @@
 			}
 			
 			
-			$tokenId    = base64_encode(mcrypt_create_iv(32));
+			$tokenId    = base64_encode($data['email']);
 			$issuedAt   = time();
 			$notBefore  = $issuedAt ;             
 			$expire     = $notBefore +  (3 * 60);            // Adding 3 minutes
