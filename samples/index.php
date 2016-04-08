@@ -8,8 +8,8 @@
 	
 	
 	
-	$key = "NC8XanSyKcyU8PtUOnl-xxxxxxxxxx";
-	$secret = "mE7sGcH-zQc_-KF6xxxxxxxxxxxxxx";
+	$key = 'REa3kVPVwP8fsB5eJ5kEVx0FFOQV3BJd';
+	$secret = 'vjr99xF9jM5JGn2evDztur58jIWdp2TQ';
 	
 	
 	$whisperbuddy = new WhisperBuddy($key,$secret);
@@ -20,8 +20,8 @@
 	
 	$response = $whisperbuddy->createLead($data);
 	
-	
-	var_dump($response);
+	$response = json_decode($response);
+	echo var_dump($response);
 	
 	
 	// Create Listener
@@ -30,5 +30,4 @@
 	$listener = $whisperbuddy->listen();
 	
 	var_dump($listener);
-	
 	

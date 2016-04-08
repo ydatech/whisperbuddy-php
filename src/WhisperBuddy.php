@@ -2,7 +2,7 @@
 	namespace whisperbuddy;
 	
 	use \Firebase\JWT\JWT;
-	use \Curl\Curl;
+	use GuzzleHttp\Client;
 	
 	class WhisperBuddy{
 		/*
@@ -85,25 +85,26 @@
 			$jwt = JWT::encode($prop,$secretkey, 'HS512');
 			
 			
-			
-			$curl = new Curl();
-			$curl->post('http://api.whisperbuddy.com/leads', array(
+			$client = new Client();
+			$res = $client->post('http://api.whisperbuddy.com/leads', [
+			'form_params' =>[
 			'key' => $this->key,
 			'token' => $jwt,
-			));
+			]
+			]);
 			
-			$response = $curl->response;
-			$curl->close();
+			$response = $res->getBody()->getContents();
+			
 			
 			return $response;
 			
 		}
 		
 		/*
-		 * WhisperBuddy listener
-		 * 
-		 *
-		 */
+			* WhisperBuddy listener
+			* 
+			*
+		*/
 		
 		public function listen(){
 			
@@ -134,4 +135,4 @@
 		
 		
 		
-	}																						
+	}																								
